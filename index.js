@@ -77,8 +77,7 @@ if (cont === 0) {
       opcion_pago = parseInt(prompt("Elija la opción de Pago"));
     }
   } while (cont2 !== 1);
-  suma_total = prod_farmacia.reduce(
-    (acumulador, object) => acumulador + object.precio, 0);
+  suma_total = prod_farmacia.reduce((acumulador, object) => acumulador + object.precio, 0);
   document.write("<h3> LISTA DE PRODUCTOS </h3>");
   for (items of prod_farmacia) {
     document.write(`${items.id + 1} - ${items.nombre}      --------    $${items.precio}<br><br>`);
